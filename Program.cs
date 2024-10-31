@@ -31,6 +31,11 @@ namespace ToDoApp
                     case "2":
                         RemoveTodo();
                         break;
+                    case"3":
+                         return;
+                    default:
+                        Console.WriteLine("Ogiltigt val, försök igen");
+                        break;
 
                 }
                 static void AddTodo()
