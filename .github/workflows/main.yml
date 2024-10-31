@@ -3,7 +3,7 @@ name: Print Repository Info
 on:
   push:
     branches:
-      - main
+      - '**'
 
 jobs:
   print-info:
