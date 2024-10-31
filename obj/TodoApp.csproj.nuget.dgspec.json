@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Cleancodekurs\\Git_ToDo\\MyToDo\\TodoApp\\TodoApp.csproj": {}
+    "D:\\Cleancodekurs\\Git_ToDo\\MyToDo\\TodoApp.csproj": {}
   },
   "projects": {
-    "D:\\Cleancodekurs\\Git_ToDo\\MyToDo\\TodoApp\\TodoApp.csproj": {
+    "D:\\Cleancodekurs\\Git_ToDo\\MyToDo\\TodoApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Cleancodekurs\\Git_ToDo\\MyToDo\\TodoApp\\TodoApp.csproj",
+        "projectUniqueName": "D:\\Cleancodekurs\\Git_ToDo\\MyToDo\\TodoApp.csproj",
         "projectName": "TodoApp",
-        "projectPath": "D:\\Cleancodekurs\\Git_ToDo\\MyToDo\\TodoApp\\TodoApp.csproj",
+        "projectPath": "D:\\Cleancodekurs\\Git_ToDo\\MyToDo\\TodoApp.csproj",
         "packagesPath": "C:\\Users\\mirke\\.nuget\\packages\\",
-        "outputPath": "D:\\Cleancodekurs\\Git_ToDo\\MyToDo\\TodoApp\\obj\\",
+        "outputPath": "D:\\Cleancodekurs\\Git_ToDo\\MyToDo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
