@@ -13,6 +13,6 @@ jobs:
 
     - name: Count rows
       run: |
-        ROW_COUNT$(find . -name "*.cs" -exec cat {} + | wc -l)
+        ROW_COUNT=$(find . -name "*.cs" -exec cat {} + | wc -l)
         echo  "Total number of lines in  .cs files: $ROW_COUNT"
     
