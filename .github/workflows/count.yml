@@ -13,5 +13,5 @@ jobs:
 
     - name: Count Files
       run: |
-        FILE_COUNT=$(find . -name "*.cs" | wc -1)
+        FILE_COUNT=$(find . -name "*.cs" | wc -l)
         echo  "Number of .cs files: $FILE_COUNT"
