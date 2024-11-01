@@ -20,7 +20,7 @@ namespace ToDoApp
                 Console.WriteLine("\nVad vill du göra?");
                 Console.WriteLine("1. Lägg till uppgift");
                 Console.WriteLine("2. Ta bort uppgift");
-                Console.WriteLine("3. Avsluta");
+                Console.WriteLine("3. För att avsluta");
 
                 var input = Console.ReadLine();
                 switch (input)
