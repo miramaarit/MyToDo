@@ -1,0 +1,35 @@
+name: Build and Publish .NET Console App
+
+on:
+  push:
+    branches:
+      -staging
+  pull_request:
+    branches:
+      -staging
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v4
+
+    - name: Set up .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0'
+
+    - name: Build
+      run: dotnet build
+
+    - name: Publish
+      run: dotnet publish --configuration Release --output ./output
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with: 
+        name: MyToDoApp
+        path: ./output
+       
