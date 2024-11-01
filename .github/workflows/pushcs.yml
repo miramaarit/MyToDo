@@ -1,4 +1,4 @@
-name: Build Project
+name: Change in .cs-file
 
 on:
   push:
