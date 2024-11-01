@@ -34,7 +34,7 @@ namespace ToDoApp
                     case"3":
                          return;
                     default:
-                        Console.WriteLine("Ogiltigt val, försök igen");
+                        Console.WriteLine("Du har inte gjort något val, försök igen");
                         break;
 
                 }
