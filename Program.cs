@@ -34,7 +34,7 @@ namespace ToDoApp
                     case"3":
                          return;
                     default:
-                        Console.WriteLine("Du har inte gjort något val, försök igen");
+                        Console.WriteLine("Gör ett val, försök igen");
                         break;
 
                 }
@@ -57,7 +57,7 @@ namespace ToDoApp
                     }
                     else
                     {
-                        Console.WriteLine("Ogiltigt nummer, tryck på en knapp för att fortsätta.");
+                        Console.WriteLine("Ogiltigt nummer, tryck på valfri knapp för att fortsätta.");
                         Console.ReadKey();
                     }
                 }
