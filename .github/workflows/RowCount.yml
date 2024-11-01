@@ -1,0 +1,18 @@
+name: Count rows in App
+
+on: 
+  workflow_dispatch
+
+jobs: 
+  Count-rows:
+    runs-on: ubuntu-latest
+    steps: 
+    - run: pwd
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Count rows
+      run: |
+        ROW_COUNT$(find . -name "*.cs" -exec cat {} + | wc -l)
+        echo  "Total number of lines in  .cs files: $ROW_COUNT"
+    
