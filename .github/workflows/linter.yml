@@ -1,0 +1,37 @@
+name: Linter & Laughter
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  lint-check:
+    name: Code Lint and Format Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run linter
+        run: npm run lint
+        continue-on-error: true
+
+      - name: Show fun messages on failure
+        if: failure()
+        run: echo "Uh oh! Looks like there's a linting issue! Clean your code to make it smile."
+
+      - name: Celebrate success with a joke
+        if: success()
+        run: |
+          curl -s https://official-joke-api.appspot.com/random_joke | jq -r '.setup + " - " + .punchline'
