@@ -17,10 +17,10 @@ namespace ToDoApp
                 {
                     Console.WriteLine($"{i + 1}. {toDoList[i]}");
                 }
-                Console.WriteLine("\nVad vill du göra?");
-                Console.WriteLine("1. Lägg till uppgift");
-                Console.WriteLine("2. Ta bort uppgift");
-                Console.WriteLine("3. För att avsluta");
+                Console.WriteLine("\nVad vill du göra?");//Fråga
+                Console.WriteLine("1.Lägg till uppgift");
+                Console.WriteLine("2.Ta bort uppgift");
+                Console.WriteLine("3.För att avsluta");
 
                 var input = Console.ReadLine();
                 switch (input)
